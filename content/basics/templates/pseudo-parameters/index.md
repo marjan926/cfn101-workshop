@@ -8,7 +8,7 @@ _Lab Duration: ~15 minutes_
 ---
 
 ### Overview
-In this lab, you will learn how to use [pseudo parameters](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/pseudo-parameter-reference.html) to write reusable templates.
+In this lab, you will learn how to use **[pseudo parameters](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/pseudo-parameter-reference.html)** to write reusable templates.
 
 ### Topics Covered
 By the end of this lab, you will be able to:
@@ -168,7 +168,7 @@ Save the template you have updated with content above. Next, navigate to the AWS
 :::code{language=shell showLineNumbers=false showCopyAction=true}
 cd cfn101-workshop/code/workspace/pseudo-parameters
 :::
-1. Use the AWS CLI to create the stack. The required parameters `--stack-name` and `--template-body` have been pre-filled for you.
+1. Use the AWS CLI to create the stack. The required parameters `--stack-name`, `--template-body` and `--capabilities` have been pre-filled for you.
 :::code{language=shell showLineNumbers=false showCopyAction=true}
 aws cloudformation create-stack --stack-name cfn-workshop-pseudo-parameters --template-body file://pseudo-parameters.yaml --capabilities CAPABILITY_NAMED_IAM
 :::
@@ -260,7 +260,7 @@ See `code/solutions/pseudo-parameters/pseudo-parameters.yaml` for the full solut
 :::code{language=shell showLineNumbers=false showCopyAction=true}
 cd cfn101-workshop/code/workspace/pseudo-parameters
 :::
-1. Use the AWS CLI to update the stack. The required parameters `--stack-name` and `--template-body` have been pre-filled for you.
+1. Use the AWS CLI to update the stack. The required parameters `--stack-name`, `--template-body` and `--capabilities` have been pre-filled for you.
 :::code{language=shell showLineNumbers=false showCopyAction=true}
 aws cloudformation update-stack --stack-name cfn-workshop-pseudo-parameters --template-body file://pseudo-parameters.yaml --capabilities CAPABILITY_NAMED_IAM
 :::
@@ -279,7 +279,7 @@ aws cloudformation update-stack --stack-name cfn-workshop-pseudo-parameters --te
 1. Click on **Choose file** button and navigate to your workshop directory.
 1. Choose the `pseudo-parameters.yaml` template.
 1. You can leave **Configure stack options** default, click **Next**.
-1. On the **Review <stack_name>** page, scroll down to the bottom and click on **Submit**.
+1. On the **Review <stack_name>** page, scroll down to the bottom, and check the box under the following *Capabilities* section: **I acknowledge that AWS CloudFormation might create IAM resources.** and click **Submit**.
 1. Wait until the stack creation is complete. Refresh the view in the console until you see your stack to be in the `UPDATE_COMPLETE` status.
 1. Open the **[Amazon S3](https://console.aws.amazon.com/s3)** console and verify your S3 bucket uses the `YOUR_BUCKET_NAME_PREFIX-AWS_REGION-YOUR_ACCOUNT_ID` format.
 ::::

@@ -119,7 +119,7 @@ Now that you have added a Mappings section to your template, go to the AWS conso
 :::code{language=shell showLineNumbers=false showCopyAction=true}
 cd cfn101-workshop/code/workspace
 :::
-1. Use the AWS CLI to create the stack. The required parameter `--template-body` have been pre-filled for you. Replace the `ParameterValue` **MyAmiId** with  the value you have hardcoded in `resources.yaml` file earlier.
+1. Use the AWS CLI to create the stack. The required parameters `--stack-name` and `--template-body` have been pre-filled for you. Replace the `ParameterValue` **MyAmiId** with  the value you have hardcoded in `resources.yaml` file earlier.
 :::code{language=shell showLineNumbers=false showCopyAction=true}
 aws cloudformation create-stack --stack-name cfn-workshop-mappings --template-body file://mappings.yaml --parameters ParameterKey="AmiID",ParameterValue="MyAmiId"
 :::
@@ -191,7 +191,7 @@ To test that your solution works, Follow below steps:
 :::code{language=shell showLineNumbers=false showCopyAction=true}
 cd cfn101-workshop/code/workspace
 :::
-1. Use the AWS CLI to update the stack. The required parameter `--template-body` have been pre-filled for you. Replace the `ParameterValue` **MyAmiId** with the value you have hardcoded in `resources.yaml` file earlier.
+1. Use the AWS CLI to update the stack. The required parameters `--stack-name` and `--template-body` have been pre-filled for you. Replace the `ParameterValue` **MyAmiId** with the value you have hardcoded in `resources.yaml` file earlier.
 :::code{language=shell showLineNumbers=false showCopyAction=true}
 aws cloudformation update-stack --stack-name cfn-workshop-mappings --template-body file://mappings.yaml --parameters ParameterKey="AmiID",ParameterValue="MyAmiId" ParameterKey="EnvironmentType",ParameterValue="Dev"
 :::

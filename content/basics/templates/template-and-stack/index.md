@@ -99,11 +99,11 @@ overwritten by mistake or to archive objects so that you can retrieve previous v
     :::code{language=shell showLineNumbers=false showCopyAction=true}
     cd cfn101-workshop/code/workspace
     :::
-    1. Use the AWS CLI to create the stack. The required parameters `--stack-name` and `--template-body` have been pre-filled for you.
+    1. Use the AWS CLI to update the stack. The required parameters `--stack-name` and `--template-body` have been pre-filled for you.
     :::code{language=shell showLineNumbers=false showCopyAction=true}
     aws cloudformation update-stack --stack-name cfn-workshop-template-and-stack --template-body file://template-and-stack.yaml
     :::
-    1. If the `create-stack` command was successfully sent, CloudFormation will return `StackId`.
+    1. If the `update-stack` command was successfully sent, CloudFormation will return `StackId`.
     :::code{language=shell showLineNumbers=false showCopyAction=false}
     "StackId": "arn:aws:cloudformation:us-east-1:123456789012:stack/cfn-workshop-template-and-stack/739fafa0-e4d7-11ed-a000-12d9009553ff"
     :::

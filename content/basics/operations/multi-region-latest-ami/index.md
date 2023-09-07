@@ -41,7 +41,7 @@ Go to the AWS console and create the stack with a new template.
 :::code{language=shell showLineNumbers=false showCopyAction=true}
 cd cfn101-workshop/code/workspace
 :::
-1. Use the AWS CLI to create the stack. The required parameter `--template-body` have been pre-filled for you.
+1. Use the AWS CLI to create the stack. The required parameters `--stack-name` and `--template-body` have been pre-filled for you.
 :::code{language=shell showLineNumbers=false showCopyAction=true}
 aws cloudformation create-stack --stack-name cfn-workshop-multi-region-latest-ami \
 --template-body file://multi-region-latest-ami.yaml
@@ -77,7 +77,7 @@ Deploy the template in different AWS Region to the one you have been using.
 :::code{language=shell showLineNumbers=false showCopyAction=true}
 cd cfn101-workshop/code/workspace
 :::
-1. Use the AWS CLI to create the stack. The required parameter `--template-body` have been pre-filled for you.
+1. Use the AWS CLI to create the stack. The required parameters `--stack-name` and `--template-body` have been pre-filled for you.
 Change the value of `--region` flag to the different region you have created your first stack in. For example, if you created the first stack in `us-east-1` change region to `us-east-2`.
 :::code{language=shell showLineNumbers=false showCopyAction=true}
 aws cloudformation create-stack --stack-name cfn-workshop-multi-region-latest-ami \

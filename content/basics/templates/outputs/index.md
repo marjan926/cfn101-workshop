@@ -61,7 +61,7 @@ In this Lab, you will:
 :::code{language=shell showLineNumbers=false showCopyAction=true}
 cd cfn101-workshop/code/workspace
 :::
-1. Use the AWS CLI to create the stack. The required parameter `--template-body` have been pre-filled for you. Replace the `ParameterValue` **MyAmiId** with  the value you have hardcoded in `resources.yaml` file earlier.
+1. Use the AWS CLI to create the stack. The required parameters `--stack-name` and `--template-body` have been pre-filled for you. Replace the `ParameterValue` **MyAmiId** with  the value you have hardcoded in `resources.yaml` file earlier.
 :::code{language=shell showLineNumbers=false showCopyAction=true}
 aws cloudformation create-stack --stack-name cfn-workshop-outputs --template-body file://outputs.yaml --parameters ParameterKey="AmiID",ParameterValue="MyAmiId"
 :::
@@ -132,7 +132,7 @@ _Outputs_ section of the template. You should continue using the `outputs.yaml` 
   :::code{language=shell showLineNumbers=false showCopyAction=true}
   cd cfn101-workshop/code/workspace
   :::
-1. Use the AWS CLI to update the stack. The required parameter `--template-body` have been pre-filled for you. Replace the `ParameterValue` **MyAmiId** with  the value you have hardcoded in `resources.yaml` file earlier.
+1. Use the AWS CLI to update the stack. The required parameters `--stack-name` and `--template-body` have been pre-filled for you. Replace the `ParameterValue` **MyAmiId** with  the value you have hardcoded in `resources.yaml` file earlier.
   :::code{language=shell showLineNumbers=false showCopyAction=true}
   aws cloudformation update-stack --stack-name cfn-workshop-outputs --template-body file://outputs.yaml --parameters ParameterKey="AmiID",ParameterValue="MyAmiId"
   :::

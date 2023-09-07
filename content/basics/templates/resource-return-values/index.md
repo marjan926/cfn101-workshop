@@ -91,7 +91,7 @@ Let’s create a stack using the `resource-return-values.yaml` template, and see
 :::code{language=shell showLineNumbers=false showCopyAction=true}
 cd cfn101-workshop/code/workspace/resource-return-values
 :::
-1. Use the AWS CLI to create the stack. The required parameter `--template-body` have been pre-filled for you.
+1. Use the AWS CLI to create the stack. The required parameters `--stack-name` and `--template-body` have been pre-filled for you.
 :::code{language=shell showLineNumbers=false showCopyAction=true}
 aws cloudformation create-stack --stack-name cfn-workshop-resource-return-values --template-body file://resource-return-values.yaml
 :::
@@ -179,7 +179,7 @@ Outputs:
 :::code{language=shell showLineNumbers=false showCopyAction=true}
 cd cfn101-workshop/code/workspace/resource-return-values
 :::
-1. Use the AWS CLI to create the stack. The required parameter `--template-body` have been pre-filled for you.
+1. Use the AWS CLI to create the stack. The required parameters `--stack-name` and `--template-body` have been pre-filled for you.
 :::code{language=shell showLineNumbers=false showCopyAction=true}
 aws cloudformation create-stack --stack-name cfn-workshop-resource-return-values-challenge --template-body file://resource-return-values-challenge.yaml
 :::

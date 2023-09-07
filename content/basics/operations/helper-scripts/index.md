@@ -350,7 +350,7 @@ Add the code below to html `<h2>` tags:
 :::code{language=shell showLineNumbers=false showCopyAction=true}
 cd cfn101-workshop/code/workspace
 :::
-1. Use the AWS CLI to update the stack. The required parameters have been pre-filled for you.
+1. Use the AWS CLI to update the stack. The required parameters `--stack-name`, `--template-body` and `--capabilities` have been pre-filled for you.
 :::code{language=shell showLineNumbers=false showCopyAction=true}
 aws cloudformation update-stack --stack-name cfn-workshop-helper-scripts \
 --template-body file://helper-scripts.yaml \

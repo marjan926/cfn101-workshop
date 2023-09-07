@@ -90,7 +90,7 @@ Now it is time to create your stack.
 :::code{language=shell showLineNumbers=false showCopyAction=true}
 cd cfn101-workshop/code/workspace
 :::
-1. Use the AWS CLI to create the stack. The required parameter `--template-body` have been pre-filled for you. Replace the `ParameterValue` **MyAmiId** with the value you have hardcoded in `resources.yaml` file earlier.
+1. Use the AWS CLI to create the stack. The required parameters `--template-name` and `--template-body` have been pre-filled for you. Replace the `ParameterValue` **MyAmiId** with the value you have hardcoded in `resources.yaml` file earlier.
 :::code{language=shell showLineNumbers=false showCopyAction=true}
 aws cloudformation create-stack --stack-name cfn-workshop-intrinsic-functions --template-body file://intrinsic-functions.yaml --parameters ParameterKey="AmiID",ParameterValue="MyAmiId"
 :::
@@ -154,7 +154,7 @@ Resources:
 :::code{language=shell showLineNumbers=false showCopyAction=true}
 cd cfn101-workshop/code/workspace
 :::
-1. Use the AWS CLI to update the stack. The required parameter `--template-body` have been pre-filled for you. Replace the `ParameterValue` **MyAmiId** with the value you have hardcoded in `resources.yaml` file earlier.
+1. Use the AWS CLI to update the stack. The required parameters `--template-name` and `--template-body` have been pre-filled for you. Replace the `ParameterValue` **MyAmiId** with the value you have hardcoded in `resources.yaml` file earlier.
 :::code{language=shell showLineNumbers=false showCopyAction=true}
 aws cloudformation update-stack --stack-name cfn-workshop-intrinsic-functions --template-body file://intrinsic-functions.yaml --parameters ParameterKey="AmiID",ParameterValue="MyAmiId"
 :::

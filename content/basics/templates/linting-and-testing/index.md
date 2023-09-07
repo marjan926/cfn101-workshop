@@ -6,6 +6,7 @@ weight: 900
 _Lab Duration: ~15 minutes_
 
 _Challenge: ~3 minutes._
+
 ---
 
 ### Overview

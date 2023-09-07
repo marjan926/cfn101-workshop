@@ -39,7 +39,7 @@ Use the `sqs-queues.yaml` template, that contains the error mentioned earlier, t
 :::code{language=shell showLineNumbers=false showCopyAction=true}
 cd cfn101-workshop/code/workspace/troubleshooting-provisioning-errors
 :::
-1. Use the AWS CLI to create the stack. The required parameter `--template-body` have been pre-filled for you.
+1. Use the AWS CLI to create the stack. The required parameters `--stack-name` and `--template-body` have been pre-filled for you.
 :::code{language=shell showLineNumbers=false showCopyAction=true}
 aws cloudformation create-stack --stack-name cfn-workshop-troubleshooting-provisioning-errors --template-body file://sqs-queues.yaml --disable-rollback
 :::
@@ -78,7 +78,7 @@ Your goal is to troubleshoot and fix the error in the template, and resume provi
 :::code{language=shell showLineNumbers=false showCopyAction=true}
 cd cfn101-workshop/code/workspace/troubleshooting-provisioning-errors
 :::
-1. Use the AWS CLI to update the stack. The required parameter `--template-body` have been pre-filled for you.
+1. Use the AWS CLI to update the stack. The required parameters `--stack-name` and `--template-body` have been pre-filled for you.
 :::code{language=shell showLineNumbers=false showCopyAction=true}
 aws cloudformation update-stack --stack-name cfn-workshop-troubleshooting-provisioning-errors --template-body file://sqs-queues.yaml --disable-rollback
 :::
@@ -151,7 +151,7 @@ You choose to describe two [AWS Systems Manager Parameter Store](https://docs.aw
   :::code{language=shell showLineNumbers=false showCopyAction=true}
   cd cfn101-workshop/code/workspace/troubleshooting-provisioning-errors
   :::
-1. Use the AWS CLI to update the stack. The required parameter `--template-body` have been pre-filled for you.
+1. Use the AWS CLI to update the stack. The required parameters `--stack-name` and `--template-body` have been pre-filled for you.
   :::code{language=shell showLineNumbers=false showCopyAction=true}
   aws cloudformation update-stack --stack-name cfn-workshop-troubleshooting-provisioning-errors --template-body file://sqs-queues.yaml --disable-rollback
   :::
